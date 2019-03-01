@@ -53,7 +53,7 @@ class Instanssi(object):
 
 
 
-valot = Instanssi("airzero", "valot.party", 9909)
+valot = Instanssi("instanssilainen", "valot.party", 9909)
 
 # 2 ensimmäistä argumenttia ovat valo josta aloitetaan ja valo johon lopetetaan, 3 viimeistä ovat väriarvot.
 for i in range(int(sys.argv[1]), int(sys.argv[2])):
