@@ -30,15 +30,14 @@ class Instanssi(object):
         self.packet.append(0) # Lopeta tagi osa
 
 
-    def set(self, i, r, g, b):
+    def set(self, i, r, g):
         """Aseta valo i RGB-arvoon"""
         self.packet += [
             1, # Tehosteen tyyppi on yksi eli valo
             i, # Valon indeksi
             0, # Laajennustavu. Aina nolla. Älä välitä tästä
-            r, # Punaisuus
-            g, # Vihreys
-            b, # Sinisyys
+            r, # teho
+            g # strobo
         ]
 
     def send(self):
@@ -56,7 +55,7 @@ class Instanssi(object):
 valot = Instanssi("instanssilainen", "127.0.0.1", 9909)
 
 # 2 ensimmäistä argumenttia ovat valo josta aloitetaan ja valo johon lopetetaan, 3 viimeistä ovat väriarvot.
-for i in range(int(sys.argv[1]), int(sys.argv[2])+1):
-    valot.set(i, int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5]))
+for i in range(int(sys.argv[1]), int(sys.argv[2])):
+    valot.set(i, int(sys.argv[3]), int(sys.argv[4]))
 # Lähetä sinisyys käskyt kaikki kerralla
 valot.send()
