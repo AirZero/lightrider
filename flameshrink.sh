@@ -2,7 +2,7 @@
 
 i=254
 
-while [ $i -gt 1 ]
+while [ $i -gt 10 ]
 do
 	V=$(((($RANDOM) % 100) - 80))
 	echo $i

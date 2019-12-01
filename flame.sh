@@ -8,6 +8,6 @@ do
 	sleep 0.1
 	./all.py 0 25 255 180 0
 	sleep 0.2
-	./ all.py 0 25 200 50 0
+	./all.py 0 25 200 50 0
 	sleep 0.1
 done

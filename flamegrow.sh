@@ -2,7 +2,7 @@
 
 i=4
 
-while [ $i -ne 244 ]
+while [ $i -ne 222 ]
 do
 	V=$(((($RANDOM) % 100) - 70))
 	./all.py 0 25 $i $V 0
