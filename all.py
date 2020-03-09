@@ -58,9 +58,9 @@ valot = Instanssi("instanssilainen", "127.0.0.1", 9909)
 # 2 ensimmäistä argumenttia ovat valo josta aloitetaan ja valo johon lopetetaan, 3 viimeistä ovat väriarvot.
 for i in range(int(sys.argv[1]), int(sys.argv[2])+1):
     valot.set(i, int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5]))
-    print(sys.argv[1])
-    print(sys.argv[2])
+#    print(sys.argv[1])
+#    print(sys.argv[2])
 
-print (range(int(sys.argv[1]), int(sys.argv[2])+1))
+#print (range(int(sys.argv[1]), int(sys.argv[2])+1))
 # Lähetä sinisyys käskyt kaikki kerralla
 valot.send()
