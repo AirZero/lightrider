@@ -1,0 +1,8 @@
+  164  mkdir good_old_lightserver
+  165  cd good_old_lightserver/
+  167  git clone https://github.com/turol/valoserveri.git
+  168  git checkout 9d7fd253e95a88126b4f7561cbc82c060b1c0b18
+  169  cd valoserveri/
+  170  git checkout 9d7fd253e95a88126b4f7561cbc82c060b1c0b18
+  173  g++ -o serveri serveri.cpp
+
