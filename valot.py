@@ -59,4 +59,4 @@ packet = bytearray([
 ])
 
 
-udp_socket.sendto(packet, ('valot.party', 9909))
+udp_socket.sendto(packet, ('84.251.168.38', 9909))
