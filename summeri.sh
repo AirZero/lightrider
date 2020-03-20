@@ -1,9 +1,13 @@
+./../escapebot/glados_better.sh "Coronaa havaittu, käynnistetään desinfiointi"
+vlc ../siren.mp3 &
+
 while [ 1==1 ]
 
+
 do
-	./flameshrink.sh
-	sleep 0.05
-	./all.py 0 25 255 0 0
+	./flamegrow.sh
+	sleep 1
+	./all.py 0 25 0 0 0
 
 
 done

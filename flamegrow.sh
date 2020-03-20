@@ -2,11 +2,13 @@
 
 i=0
 
-while [ $i -gt 10 ]
+while [ $i -lt 250 ]
 do
-	V=$(((($RANDOM) % 100) - 80))
+	#V=$(80)
 	echo $i
-	./all.py 0 25 $i $V 0
+	./all.py 0 25 $i 0 0 #$V 0
 	((i+=10))
+	sleep 0.45*$i
+	sleep 0.05
 done
 ./all.py 0 25 0 0 0 
