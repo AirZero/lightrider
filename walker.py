@@ -38,13 +38,13 @@ class Fader(object):
 		intRed=int(red)
 		intGreen=int(green)
 		intBlue=int(blue)
-		
+
 		time.sleep(speed)
 
 		print(str(intRed) + " " + str(intGreen) + " "+ str(intBlue))
 
 		kutsu = ".\/all.py 0 36 " + str(intRed) + " " + str(intGreen) + " " + str(intBlue)
-	        print(kutsu)
+		print(kutsu)
 
 		subprocess.call(kutsu, shell=True)
 
